@@ -1,0 +1,130 @@
+﻿*{
+  margin: 0;
+  padding: 0;
+}
+div.contenedor{
+    width: 100%;
+    border: 1px solid gray;
+    padding-top: 55px;
+}
+
+#enca , footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+
+}
+
+nav ul {
+    list-style-type: none; /* elimina viñeta*/
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+    background-color: #cccccc;
+    background-repeat:repeat-y; /*no-repeat;*/ /*En caso de que se quiera que las imagenes esten arriba, sobre el eje x, la y se cambia por x*/
+    /*background-size:300px 180px;*/
+}
+
+p{
+  margin-left: 300px; /*si las img estan en eje x, esta parte se quita para que quete el texto extenso*/
+}
+
+h1{
+  margin-left: 250px;
+  text-align:center;
+  font-size: 200%;
+}
+h2{
+  margin-left: 300px;
+}
+
+#mexico{
+  color:green;
+}
+
+#londres{
+  color:red;
+}
+
+#paris{
+  color:blue;
+}
+
+#tokyo{
+  color:FireBrick;
+}
+
+.banderaMex{
+  background-image: url("../img/mexico.jpg");
+}
+.banderaLon{
+  background-image: url("../img/londres.png");
+}
+.banderaPar{
+  background-image: url("../img/paris.png");
+}
+.banderaTok{
+  background-image: url("../img/tokyo.jpg");
+}
+
+iframe{
+	margin-left: 300px;
+}
+
+/***************************/
+.fijo{
+  background-color: rgb(10, 77, 82);
+  text-align: center;
+  position: fixed; /*La posicion va a ser fijo*/
+  width: 100%; /*Tamaño del menu*/
+  top: 0;/*Que este pegado hasta arriba*/
+}
+.fijo ul{
+  list-style: none; /*Eliminar biñetas de la listas*/
+  margin: 0;
+  padding: 0;
+}
+
+.fijo ul li{
+  display: inline-block; /*Para que las palabras esten seguiditas*/
+}
+
+#izq{
+  float: left;
+}
+#dere{
+  float: right;
+}
+.fijo ul li a{
+  color: rgb(255, 255, 255); /*color de letras*/
+  font-weight: 1000; /*en negritas*/
+  display: block; /* Para que lo haga bloque o al tamaño del padding*/
+  padding: 20px;
+  text-decoration: none; /* Sin subrayado*/
+}
+a.active{
+  background-color: rgb(224, 42, 72);
+}
+header li a:hover{
+  background-color: rgb(224, 42, 72);
+}
+/***************************/

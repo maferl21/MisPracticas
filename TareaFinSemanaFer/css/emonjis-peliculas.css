@@ -1,0 +1,64 @@
+body {
+  background-color: hsl(0, 0%, 99%);
+}
+
+h1 {
+  color: rgb(224, 42, 72);
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+p {
+  font-size: 2rem;
+}
+
+p.intro {
+  color: rgb(10, 77, 82);
+}
+
+summary {
+  font-size: 4rem;
+}
+
+span.par {
+  background-color: white;
+}
+
+span.impar {
+  background-color: rgb(27, 78, 90);
+}
+/***************************/
+header{
+  background-color: rgb(10, 77, 82);
+  text-align: center;
+  font-size: 17px;
+}
+#izq{
+  float: left;
+}
+#dere{
+  float: right;
+}
+header ul li a{
+  color: rgb(255, 255, 255); /*color de letras*/
+  font-weight: 1000; /*en negritas*/
+  display: block; /* Para que lo haga bloque o al tamaño del padding*/
+  padding: 20px;
+  text-decoration: none; /* Sin subrayado*/
+}
+a.active{
+  background-color: rgb(224, 42, 72);
+}
+header li a:hover{
+  background-color: rgb(224, 42, 72);
+}
+header ul{
+  list-style: none; /*Eliminar biñetas de la listas*/
+  margin: 0;
+  padding: 0;
+}
+
+header ul li{
+  display: inline-block; /*Para que las palabras esten seguiditas*/
+}
+/***************************/

@@ -1,0 +1,269 @@
+body{
+    background: #e9e8e8;
+}
+
+.contenedor {
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    padding-top: 52px;
+    font-family: sans-serif;
+}
+/***************************/
+header{
+    background-color: rgb(10, 77, 82);
+    text-align: center;
+    font-size: 17px;
+}
+#izq{
+    float: left;
+}
+#dere{
+    float: right;
+}
+header ul li a{
+    color: rgb(255, 255, 255); /*color de letras*/
+    font-weight: 1000; /*en negritas*/
+    display: block; /* Para que lo haga bloque o al tamaño del padding*/
+    padding: 20px;
+    text-decoration: none; /* Sin subrayado*/
+}
+a.active{
+    background-color: rgb(224, 42, 72);
+}
+header li a:hover{
+    background-color: rgb(224, 42, 72);
+}
+/***************************/
+nav {
+    background: #000000;    
+}
+nav ul, header ul{
+    list-style: none; /*Eliminar biñetas de la listas*/
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li, header ul li{
+    display: inline-block; /*Para que las palabras esten seguiditas*/
+}
+
+nav ul li a{
+    color: rgb(255, 255, 255); /*color de letras*/
+    font-weight: 1000; /*en negritas*/
+    display: block; /* Para que lo haga bloque o al tamaño del padding*/
+    padding: 10px;
+    text-decoration: none; /* Sin subrayado*/
+}
+.dere{
+    float: right;
+}
+.dere a:hover{
+    background-color: rgb(69, 122, 235);
+    color: white;
+}
+
+@font-face{
+    font-family: josephsophia;
+    /*src: url(/fuentes/Cream\ Cake.ttf);*/
+    src: url(/fuentes/josephsophia.ttf);
+    
+}
+@font-face{
+    font-family: Cream;
+    src: url(/fuentes/Cream\ Cake.ttf);    
+}
+@font-face{
+    font-family: brush;
+    src: url(/fuentes/Brush\ Hours\ Font\ by\ 7NTypes.otf);    
+}
+@font-face{
+    font-family: dk-limon;
+    src: url(/fuentes/DK\ Lemon\ Yellow\ Sun.otf);    
+}
+h1{
+    text-align: center;
+    font-size: 90px;
+    font-family: josephsophia;
+}
+#TituloPrincipal{
+    color: rgb(101, 9, 109);
+}
+
+.indice{
+    text-align: center;
+    font-size: 35px;
+    font-family: dk-limon;
+}
+.indice a{
+    color: green;
+    text-decoration: none; /* Sin subrayado*/
+}
+.indice a:hover{
+    background-color: rgb(233, 220, 42);
+    color: black;
+    text-decoration: none; /* Sin subrayado*/
+}
+.grid{
+    display: grid; /*Para la cuadricula*/
+    grid-template-columns: repeat(2,50%); /*1fr 1fr; /*Definir las columnas en fracciones*/
+    grid-gap: 20px; /*separacion entre cada grid*/    
+}
+h2{
+    color:mediumvioletred;
+    font-family: flotta;
+    font-size: 40px;
+    background-color: rgb(253, 253, 253);
+}
+h3{
+    font-family: dk-limon;
+    font-size: 25px;
+}
+.card{
+    text-align: center;
+}
+.parrafo{
+    font-family: cursive;
+    font-size: 20px;
+}
+
+#tit{
+    font-family: dk-limon;
+    font-size: 40px;
+    text-align: left;
+}
+iframe{
+    width: 100%;
+    height: 90vh;
+}
+footer{
+    list-style: none; /*Eliminar biñetas de la listas*/
+    text-align: center;
+}
+
+footer ul li{
+    display: inline-block; /*Para que las palabras esten seguiditas*/
+}
+
+footer ul li a{
+    color: rgb(13, 50, 131); /*color de letras*/
+    font-weight: 1000; /*en negritas*/
+    display: block; /* Para que lo haga bloque o al tamaño del padding*/
+    padding: 10px;
+    text-decoration: none; /* Sin subrayado*/
+}
+
+.pie a:hover{
+    background-color: rgb(3, 40, 121);
+    color: white;
+}
+/*-------------------------------------------------------*/
+.link{
+    color: black;
+}
+.text-redes{
+    background: none;
+    text-align: center;
+}
+.redes{
+    display: inline-flex;
+    padding-left: 250px;
+}
+.redes .icon{
+    margin: 0 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    transition: 0.4s cubic-bezier(0.68,-0.55,0.265,1.55); /*Para que haga la animacion de que sale y se mete*/
+}
+.redes .icon span{
+    display: block; /*Para que se forme un recuadro*/
+    position: relative;
+    height: 60px;
+    width: 60px;
+    background: white;
+    text-align: center;
+    border-radius: 50%; /*Boder circular haciendolo en circulo*/
+    z-index: 2;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1); /*Para efecto como sombra de las cajas*/
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.redes .icon span i{
+    font-size: 25px;
+    line-height: 60px;
+}
+.redes .icon:hover span{
+    color: white;
+}
+.redes .icon .tooltip{
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    background: white;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 18px;
+    border-radius: 25px; /*Borde*/
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1); /*Para efecto como sombra de las cajas*/
+    opacity: 0; /*Para que no se vean*/
+    pointer-events: none; /*Para que no aparesca el cursor en esa parte*/
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+.redes .icon:hover .tooltip{
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.redes .icon .tooltip:before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: white;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg); /*Para posicionar el recuadro enmedio y como si fuera un rombo*/
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.redes .icon:hover span,
+.redes .icon:hover .tooltip{
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.4); /*Para que tenga una sombra la letra*/
+}
+.redes .facebook:hover span,
+.redes .facebook:hover .tooltip,
+.redes .facebook:hover .tooltip:before{
+  background: #3B5999;
+}
+.redes .insta:hover span,
+.redes .insta:hover .tooltip,
+.redes .insta:hover .tooltip:before{
+  background: #e1306c;
+}
+.redes .twitter:hover span,
+.redes .twitter:hover .tooltip,
+.redes .twitter:hover .tooltip:before{
+  background: #46c1f6;
+}
+.redes .git:hover span,
+.redes .git:hover .tooltip,
+.redes .git:hover .tooltip:before{
+  background: #333;
+}
+.redes .youtube:hover span,
+.redes .youtube:hover .tooltip,
+.redes .youtube:hover .tooltip:before{
+  background: #DE463B;
+}
+
+.fijo{
+    position: fixed; /*La posicion va a ser fijo*/
+    width: 100%; /*Tamaño del menu*/
+    top: 0;/*Que este pegado hasta arriba*/
+}
